@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main (){
+
+
+
+char opcionrecibida = '-';
+
+printf( " \t Bienvenido al menú marque la opción deseada \n");
+printf( " \t milanesa Napolitana [a] \n");
+printf( " \t locro [b] \n");
+printf( " \t empanadas [c] \n");
+printf( " \t pasta [d] \n");
+printf( " \t pizza [e] \n");
+printf( " \t salir [z] \n");
+
+
+scanf ( "%c" , &opcionrecibida );
+
+switch (opcionrecibida) {
+
+case 'a': 
+printf( "pediste una milanesa Napolitana \n");
+break
+
+case 'b': 
+printf( " locro \n");
+break
+
+case 'c': 
+printf( "empanadas \n");
+break
+
+case 'd': 
+printf( "pasta \n");
+break
+
+
+case 'e': 
+printf(" pizza \n");
+break
+
+case 'z': 
+printf(" GRacias por su pedido salir \n");
+
+default: 
+printf(" ingreso inválido \n");
+break
+
+}
+
+
+
+
+	return 0; 
+}
